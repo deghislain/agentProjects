@@ -1,4 +1,5 @@
 Agent Projects
+
 Introduction
 Agent Projects is a collection of innovative AI applications built around intelligent agents. This repository showcases our exploration of cutting-edge techniques in natural language processing and machine learning.
 Featured Application: Rag Agent
