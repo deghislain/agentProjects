@@ -10,8 +10,7 @@ from langchain_experimental.autonomous_agents import BabyAGI
 import faiss
 from langchain.vectorstores import FAISS
 
-import sys
-print("*******************", sys.path)
+
 
 
 

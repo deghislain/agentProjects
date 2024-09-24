@@ -19,11 +19,16 @@ import streamlit as st
 
 template = """<|begin_of_text|><|start_header_id|>system<|end_header_id|>
 
-Given the document and the current conversation between a user and an assistant, your task is as follows: answer any user query by using information from the document. Always answer as helpfully as possible, while being safe. When the question cannot be answered using the context or document, output the following response: "I cannot answer that question based on the provided document.".
+Given the document and the current conversation between a user and an assistant, your task is as follows: 
+answer any user query by using information from the document. Always answer as helpfully as possible, while being safe.
+ When the question cannot be answered using the context or document, output the following response: 
+ "I cannot answer that question based on the provided document.".
 
-Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
+Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. 
+Please ensure that your responses are socially unbiased and positive in nature.
 
-If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.<|eot_id|><|start_header_id|>user<|end_header_id|>
+If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct.
+ If you don't know the answer to a question, please don't share false information.<|eot_id|><|start_header_id|>user<|end_header_id|>
 
 {context}<|eot_id|><|start_header_id|>user<|end_header_id|>
 
