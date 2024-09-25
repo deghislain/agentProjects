@@ -1,7 +1,6 @@
 .streamlit/
 *.toml
 .venv
-*.txt
 *.pyc
 *.png
 *.pdf
