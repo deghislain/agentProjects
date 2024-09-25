@@ -3,7 +3,7 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_community.tools import Tool, DuckDuckGoSearchResults
 from langchain.agents import initialize_agent, AgentType
 from tools import CustomWebScraperTool
-from langchain.utilities import GoogleSearchAPIWrapper
+
 import os
 
 llm = ChatOpenAI(

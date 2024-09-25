@@ -12,8 +12,7 @@ def get_write_prompt(topic, sources):
                  Apply expert copywriting and content creation skills to produce a well-structured, 
                  engaging, and thoroughly referenced document, using the tools at your disposal.
                  
-                  
-                 Make sure it is easy to read and understand for a non-technical audience.
-                  
+                 Make sure it is easy to read and understand for a non-technical audience. 
                  ENSURE THAT ALL INFORMATION ARE ACCURATE AND UP-TO-DATE. 
+
            """
