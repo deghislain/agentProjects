@@ -26,7 +26,7 @@ Technology Stack
     GoogleSearchAPIWrapper
     llama
 
-######################################################################################################
+#######################################################################
 Web Summarizer
 Overview
 Web Summarizer is a cutting-edge application leveraging generative AI to revolutionize content gathering and generation. 
