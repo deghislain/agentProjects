@@ -4,7 +4,6 @@ import os
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.document_loaders import PyPDFLoader
 
-
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
 
@@ -13,7 +12,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from fact_checker_agent import check_document_answer
-
 
 import streamlit as st
 
@@ -43,6 +41,8 @@ llm = ChatOpenAI(
     temperature=0,
     max_tokens=1000,
 )
+
+
 def load_document():
     print("load_document Start")
     label = "Upload a PDF document here"
