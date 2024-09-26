@@ -1,9 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
-from typing import TypeAlias
 from langchain.tools import BaseTool
+import ast
 
-Vector: TypeAlias = list[str]
 websites_content = ""
 
 
@@ -14,13 +13,15 @@ class CustomWebScraperTool(BaseTool):
     name: str = "WebsiteScraper"
     description: str = "Takes a list of websites then scrap and combine their respective content"
 
-    def _run(self, vector: Vector) -> Vector:
+    def _run(self, urls_string: str) -> str:
         global websites_content
-        for link in vector:
-            try:
+
+        try:
+            urls = ast.literal_eval(urls_string)
+            for link in urls:
                 websites_content = websites_content + scrap_document(link)
-            except Exception as ex:
-                print("Error while parsing a link", ex)
+        except Exception as ex:
+            print("Error while parsing a link", ex)
 
         return websites_content
 

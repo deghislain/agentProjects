@@ -1,7 +1,10 @@
 .streamlit/
 *.toml
 .venv
+**/doc
+*.txt
 *.pyc
 *.png
 *.pdf
 *=2.100.0
+*.gitignore

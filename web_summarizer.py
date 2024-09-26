@@ -13,7 +13,7 @@ llm = ChatOpenAI(
     openai_api_key=os.environ['GROQ_API_KEY'],
     model_name="llama-3.1-70b-versatile",
     temperature=0,
-    max_tokens=1000,
+    max_tokens=30000,
 )
 
 if __name__ == "__main__":
@@ -37,4 +37,6 @@ if __name__ == "__main__":
             if generated_content:
                 right.button("Export as pdf", key="rightbt", on_click=pdf.generate_pdf, args=[topic])
                 util.store_the_content(topic, generated_content, PATH_TO_GENERATED_CONTENT)
+                generated_content += "\n\n" + "Useful links:" + "\n\n"
+                generated_content += " ".join(sources)
                 st.write(generated_content)

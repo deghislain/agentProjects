@@ -14,5 +14,4 @@ def get_write_prompt(topic, sources):
                  
                  Make sure it is easy to read and understand for a non-technical audience. 
                  ENSURE THAT ALL INFORMATION ARE ACCURATE AND UP-TO-DATE. 
-
            """
