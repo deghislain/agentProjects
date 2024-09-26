@@ -14,15 +14,16 @@ Key Features
 
     Document Upload: Upload your PDF document for analysis.
     Q&A Session: Interact with the agent to retrieve relevant information.
-    Fact Checker Agent: Integrated Baby AGI-powered fact-checking ensures response accuracy.
+    Fact Checker Agent: Agent using GoogleSearchAPIWrapper and PythonREPL to perform fact-checking 
+                        ensuring response accuracy.
 
 Technology Stack
 
     Retrieval Augmented Generation (RAG)
     Natural Language Processing (NLP)
     Machine Learning (ML)
-    Baby AGI
     Chroma
+    PythonREPL
     GoogleSearchAPIWrapper
     llama
 
