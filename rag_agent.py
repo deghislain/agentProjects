@@ -12,7 +12,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from fack_checker_agent import check_document_answer
+from fact_checker_agent import check_document_answer
 
 
 import streamlit as st
