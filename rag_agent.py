@@ -130,10 +130,10 @@ if __name__ == "__main__":
             response = chain.invoke(question)
             result = check_document_answer(question, response)
             if 'questions_answers' not in st.session_state:
-                questions_answers.extend([question, result])
                 st.session_state['questions_answers'] = questions_answers
             else:
                 questions_answers = st.session_state['questions_answers']
-                questions_answers.extend([question, result])
+
+            questions_answers.extend([question, result])
 
         display_questions_answers()
